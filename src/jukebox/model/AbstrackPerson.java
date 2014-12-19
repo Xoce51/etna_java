@@ -3,19 +3,17 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package jukebox;
+package jukebox.model;
 
 /**
  *
  * @author aubingerard
  */
-public class Main {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
+public class AbstrackPerson
+{
+    protected   int     age;
+    protected   String  nom;
+    protected   String  prenom;
+    
     
 }
