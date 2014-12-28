@@ -6,8 +6,11 @@
             <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Jukebox.java</file>
             <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Morceau.java</file>
             <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Album.java</file>
+            <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/AbstrackPerson.java</file>
+            <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Membre.java</file>
             <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Groupe.java</file>
             <file>file:/Users/aubingerard/java/jukebox/src/jukebox/Main.java</file>
+            <file>file:/Users/aubingerard/java/jukebox/src/jukebox/model/Person.java</file>
         </group>
     </open-files>
 </project-private>

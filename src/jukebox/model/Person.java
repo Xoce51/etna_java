@@ -10,5 +10,11 @@ package jukebox.model;
  * @author aubingerard
  */
 public interface Person {
-    
+    void setAge(int newAge);
+    void setNom(String newNom);
+    void setPrenom(String newPrenom);
+            
+    int getAge();
+    String getNom();
+    String getPrenom();
 }
