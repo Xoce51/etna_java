@@ -9,7 +9,7 @@ package jukebox.model;
  *
  * @author aubingerard
  */
-public interface Person {
+public interface IPerson {
     void setAge(int newAge);
     void setNom(String newNom);
     void setPrenom(String newPrenom);

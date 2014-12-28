@@ -9,7 +9,7 @@ package jukebox.model;
  *
  * @author aubingerard
  */
-public class AbstrackPerson implements Person
+public class AbstrackPerson implements IPerson
 {
     protected   int     age;
     protected   String  nom;
