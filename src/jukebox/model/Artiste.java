@@ -27,10 +27,10 @@ public class Artiste extends AbstrackPerson {
         this.role   = role;
     }
     
-    private void setId(int newId)               { this.id = newId; }
-    private void setRole(String newRole)        { this.role = newRole; }
+    public void setId(int newId)               { this.id = newId; }
+    public void setRole(String newRole)        { this.role = newRole; }
     
-    private int getId()           { return (this.id); }
-    private String getRole()      { return (this.role); }
+    public int getId()           { return (this.id); }
+    public String getRole()      { return (this.role); }
 
 }

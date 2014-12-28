@@ -38,9 +38,9 @@ public class Jukebox {
     }
     
     
-    private List<Morceau> getPlaylist()     { return (this.playlist); }
-    private int getVolume()                 { return (this.volume); }
+    public List<Morceau> getPlaylist()     { return (this.playlist); }
+    public int getVolume()                 { return (this.volume); }
     
-    private void setPlaylist(List<Morceau> newMorceau) { this.playlist = newMorceau; }
-    private void setVolume(int newVolume)              { this.volume = newVolume; }
+    public void setPlaylist(List<Morceau> newMorceau) { this.playlist = newMorceau; }
+    public void setVolume(int newVolume)              { this.volume = newVolume; }
 }

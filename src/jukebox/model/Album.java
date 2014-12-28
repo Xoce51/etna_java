@@ -36,12 +36,12 @@ public class Album {
         this.style = style;
     }
     
-    private List<Groupe> getGroupe()     { return (this.groupe); }
-    private List<Morceau> getMorceau()   { return (this.morceau); }
-    private String getstyle()            { return (this.style); }
+    public List<Groupe> getGroupe()     { return (this.groupe); }
+    public List<Morceau> getMorceau()   { return (this.morceau); }
+    public String getstyle()            { return (this.style); }
     
-    private void setGroupe(List<Groupe> newGroupe)    { this.groupe = newGroupe; }
-    private void setMorceau(List<Morceau> newMorceau) { this.morceau = newMorceau; }
-    private void setStyle(String newStyle)            { this.style = newStyle; }
+    public void setGroupe(List<Groupe> newGroupe)    { this.groupe = newGroupe; }
+    public void setMorceau(List<Morceau> newMorceau) { this.morceau = newMorceau; }
+    public void setStyle(String newStyle)            { this.style = newStyle; }
     
 }

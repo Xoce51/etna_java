@@ -17,4 +17,8 @@ public class Membre extends Artiste {
         super(id, age, nom, prenom, role);
         this.groupe = groupe;
     }
+    
+    public void setGroupe(Groupe newGroupe)     { this.groupe = newGroupe; }
+    
+    public Groupe getGroupe()                   { return (this.groupe); }
 }
