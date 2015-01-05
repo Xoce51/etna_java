@@ -5,6 +5,10 @@
  */
 package jukebox;
 
+import jukebox.model.Artiste;
+import jukebox.model.Groupe;
+import jukebox.model.Membre;
+
 /**
  *
  * @author aubingerard
@@ -20,7 +24,12 @@ public class Main {
     
     public static void runJukebox()
     {
-        // Application logic here
+     Groupe ntm = new Groupe("NTM");
+     Artiste joeyStar = new Membre (0, 44, "Star", "Joey", "Singer", ntm);
+     Artiste koolShen = new Membre (1, 42, "Shen", "Kool", "Singer", ntm);
+     System.out.println(ntm.toString());
+     
+     
     }
     
 }

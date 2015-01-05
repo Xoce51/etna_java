@@ -14,15 +14,14 @@ import java.util.List;
  */
 public class Groupe {
     
-    private     List<Artiste>       artistes = new ArrayList<Artiste>();
+    private     String              groupe;
     
-    public Groupe(Artiste artistes[])
+    public Groupe(String name)
     {
-        int i = 0;
-        for (Artiste a : artistes)
-        {
-            this.artistes.set(i, a);
-            i++;
-        }
+        this.groupe = name;
     }
+     public void setGroupe(String newGroupe)               { this.groupe = newGroupe; }
+   
+    public String getGroupe()      { return (this.groupe); }
+
 }

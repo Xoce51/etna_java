@@ -9,17 +9,16 @@ package jukebox.model;
  *
  * @author aubingerard
  */
-public class Morceau extends Album {
+public class Morceau {
     
-    private     String      length;
+    private     String      title;
     
-    public Morceau(Groupe groupes[], Morceau morceaux[], String style, String length)
+    public Morceau(Groupe groupes, String title, int id)
     {
-        super(groupes, morceaux, style);
-        this.length = length;
+        this.title = title;
     }
     
-    public String getLenght()   { return (this.length); }
+    public String getTitle()   { return (this.title); }
     
-    public void setLength(String newLength) {this.length = newLength; }
+    public void setTitle(String newTitle) {this.title = newTitle; }
 }

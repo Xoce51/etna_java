@@ -15,19 +15,14 @@ import java.util.List;
 public class Album {
     
     private     String          style;
-    private     List<Groupe>    groupe = new ArrayList<Groupe>();
+    private     Groupe          groupe;
     private     List<Morceau>   morceau = new ArrayList<Morceau>();
     
-    public Album(Groupe groupes[], Morceau morceaux[], String style)
+    public Album(Groupe groupes, Morceau morceaux[], String style)
     {
+        this.groupe = groupes;
+          
         int i = 0;
-        for (Groupe g : groupes)
-        {
-            this.groupe.set(i, g);
-            i++;
-        }
-        i = 0;
-        
         for (Morceau m : morceaux)
         {
             this.morceau.set(i, m);
@@ -36,11 +31,11 @@ public class Album {
         this.style = style;
     }
     
-    public List<Groupe> getGroupe()     { return (this.groupe); }
+    public Groupe getGroupe()           { return (this.groupe); }
     public List<Morceau> getMorceau()   { return (this.morceau); }
     public String getstyle()            { return (this.style); }
     
-    public void setGroupe(List<Groupe> newGroupe)    { this.groupe = newGroupe; }
+    public void setGroupe(Groupe newGroupe)          { this.groupe = newGroupe; }
     public void setMorceau(List<Morceau> newMorceau) { this.morceau = newMorceau; }
     public void setStyle(String newStyle)            { this.style = newStyle; }
     
