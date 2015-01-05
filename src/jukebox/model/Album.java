@@ -5,9 +5,6 @@
  */
 package jukebox.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author aubingerard
@@ -15,28 +12,26 @@ import java.util.List;
 public class Album {
     
     private     String          style;
+    private     String          name;
+    private     int             year;
     private     Groupe          groupe;
-    private     List<Morceau>   morceau = new ArrayList<Morceau>();
     
-    public Album(Groupe groupes, Morceau morceaux[], String style)
+    public Album(Groupe groupe, String name, String style, int year)
     {
-        this.groupe = groupes;
-          
-        int i = 0;
-        for (Morceau m : morceaux)
-        {
-            this.morceau.set(i, m);
-            i++;
-        }
-        this.style = style;
+        this.groupe     = groupe;
+        this.name       = name;
+        this.style      = style;
+        this.year       = year;
     }
     
     public Groupe getGroupe()           { return (this.groupe); }
-    public List<Morceau> getMorceau()   { return (this.morceau); }
-    public String getstyle()            { return (this.style); }
+    public String getName()             { return (this.name); }
+    public String getStyle()            { return (this.style); }
+    public int getyear()                { return (this.year); }
     
     public void setGroupe(Groupe newGroupe)          { this.groupe = newGroupe; }
-    public void setMorceau(List<Morceau> newMorceau) { this.morceau = newMorceau; }
+    public void setMorceau(String newName)           { this.name = newName; }
     public void setStyle(String newStyle)            { this.style = newStyle; }
+    public void setYear(int newYear)                 { this.year = newYear; }
     
 }
