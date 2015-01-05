@@ -20,18 +20,12 @@ public class Jukebox implements IStateChangeable
     
     private     List<Morceau>   playlist = new ArrayList<Morceau>();
     private     EJukeboxState 	state;
-    private     int             volume = 50;
     
-    public Jukebox(Morceau morceaux[])
+    public Jukebox(List<Morceau> morceaux)
     {
-        int i = 0;
-        for (Morceau m : morceaux)
-        {
-            this.playlist.set(i, m);
-            i++;
-        }
+        this.playlist = morceaux;
     }
-    
+
     public void validate() throws ValidationException
     {
         if  (playlist == null)
@@ -39,11 +33,20 @@ public class Jukebox implements IStateChangeable
     }
     
     public List<Morceau> getPlaylist()     { return (this.playlist); }
-    public int getVolume()                 { return (this.volume); }
     public EJukeboxState getState()        { return (this.state); }
     
     
     public void setPlaylist(List<Morceau> newMorceau) { this.playlist = newMorceau; }
-    public void setVolume(int newVolume)              { this.volume = newVolume; }
     public void setState(EJukeboxState newState)      { this.state = newState; }
+    
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        //sb.append("Order: \r\n\tState="  + state.toString());
+        sb.append("\r\n");
+        for (Morceau p : playlist)
+            sb.append("\r\n\t" + p.toString());
+        return sb.toString();
+       
+    }
 }
