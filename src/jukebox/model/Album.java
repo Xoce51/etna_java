@@ -34,4 +34,9 @@ public class Album {
     public void setStyle(String newStyle)            { this.style = newStyle; }
     public void setYear(int newYear)                 { this.year = newYear; }
     
+    public String toString()
+    {
+        return "Album " + name + " de l'année " + year + " par le groupe" + groupe + "(" + style + ")";
+    }
+    
 }

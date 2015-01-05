@@ -32,5 +32,10 @@ public class Artiste extends AbstrackPerson {
     
     public int getId()           { return (this.id); }
     public String getRole()      { return (this.role); }
+    
+    public String toString()
+    {
+        return "Artiste " + prenom + " " + nom + " (" + age + " - "+ role + ")";
+    }
 
 }

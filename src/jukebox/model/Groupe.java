@@ -5,23 +5,25 @@
  */
 package jukebox.model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author aubingerard
  */
 public class Groupe {
     
-    private     String              groupe;
+    private     String          groupe;
     
     public Groupe(String name)
     {
         this.groupe = name;
     }
-     public void setGroupe(String newGroupe)               { this.groupe = newGroupe; }
+     public void setGroupe(String newGroupe) { this.groupe = newGroupe; }
    
-    public String getGroupe()      { return (this.groupe); }
+    public String getGroupe()                { return (this.groupe); }
+    
+    public String toString()
+    {
+        return "Nom du groupe: " + groupe;
+    }
 
 }

@@ -21,4 +21,9 @@ public class Membre extends Artiste {
     public void setGroupe(Groupe newGroupe)     { this.groupe = newGroupe; }
     
     public Groupe getGroupe()                   { return (this.groupe); }
+    
+    public String toString()
+    {
+        return "Membre: " + prenom + " " + nom + " du groupe " + groupe.getGroupe() + "\n";
+    }
 }

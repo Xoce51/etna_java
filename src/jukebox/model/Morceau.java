@@ -11,26 +11,31 @@ package jukebox.model;
  */
 public class Morceau {
     
-    private     int         tracks;
-    private     String      titles;
-    private     String      lengths;
-    private     Album       albums;
+    private     int         track;
+    private     String      title;
+    private     String      length;
+    private     Album       album;
     
     public Morceau(int track, String title, String length, Album album)
     {
-        this.tracks = track;
-        this.titles = title;
-        this.lengths = length;
-        this.albums = album;
+        this.track = track;
+        this.title = title;
+        this.length = length;
+        this.album = album;
     }
     
-    public String getTitle()    { return (this.titles); }
-    public int getTrack()       { return (this.tracks); }
-    public String getLength()   { return (this.lengths); }
-    public Album getAlbum()     { return (this.albums); }
+    public String getTitle()    { return (this.title); }
+    public int getTrack()       { return (this.track); }
+    public String getLength()   { return (this.length); }
+    public Album getAlbum()     { return (this.album); }
     
-    public void setTitle(String newTitle)   {this.titles = newTitle; }
-    public void setTrack(int newTrack)      {this.tracks = newTrack; }
-    public void setLength(String newLength) {this.lengths = newLength; }
-    public void setAlbum(Album newAlbum)    {this.albums = newAlbum; }
+    public void setTitle(String newTitle)   {this.title = newTitle; }
+    public void setTrack(int newTrack)      {this.track = newTrack; }
+    public void setLength(String newLength) {this.length = newLength; }
+    public void setAlbum(Album newAlbum)    {this.album = newAlbum; }
+    
+    public String toString()
+    {
+        return "Morceau: " + track + " - " + title + " (" + length + ") / " + album + "\n";
+    }
 }
