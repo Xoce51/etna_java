@@ -11,14 +11,26 @@ package jukebox.model;
  */
 public class Morceau {
     
-    private     String      title;
+    private     int         tracks;
+    private     String      titles;
+    private     String      lengths;
+    private     Album       albums;
     
-    public Morceau(Groupe groupes, String title, int id)
+    public Morceau(int track, String title, String length, Album album)
     {
-        this.title = title;
+        this.tracks = track;
+        this.titles = title;
+        this.lengths = length;
+        this.albums = album;
     }
     
-    public String getTitle()   { return (this.title); }
+    public String getTitle()   { return (this.titles); }
+    public int getTrack()   { return (this.tracks); }
+    public String getLength()   { return (this.lengths); }
+    public Album getAlbum()   { return (this.albums); }
     
-    public void setTitle(String newTitle) {this.title = newTitle; }
+    public void setTitle(String newTitle) {this.titles = newTitle; }
+    public void setTrack(int newTrack) {this.tracks = newTrack; }
+    public void setLength(String newLength) {this.lengths = newLength; }
+    public void setAlbum(Album newAlbum) {this.albums = newAlbum; }
 }
