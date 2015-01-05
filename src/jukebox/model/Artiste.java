@@ -10,8 +10,8 @@ package jukebox.model;
  * @author aubingerard
  */
 public class Artiste extends AbstrackPerson {
-    private     int     age, id;
-    private     String  nom, prenom, role;
+    private     int     id;
+    private     String  role;
     
     public Artiste(int id, int age, String nom, String prenom, String role)
     {

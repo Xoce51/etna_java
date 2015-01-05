@@ -15,6 +15,7 @@ public class AbstrackPerson implements IPerson
     protected   String  nom;
     protected   String  prenom;
     
+    @Override
     public void setAge(int newAge)             { this.age = newAge; }
     public void setNom(String newNom)          { this.nom = newNom; }
     public void setPrenom(String newPrenom)    { this.prenom = newPrenom; }
