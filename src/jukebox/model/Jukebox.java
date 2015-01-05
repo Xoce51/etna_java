@@ -43,7 +43,7 @@ public class Jukebox implements IStateChangeable
     public String toString()
     {
         StringBuilder sb = new StringBuilder();
-        //sb.append("Order: \r\n\tState="  + state.toString());
+        sb.append("Order: \r\n\tState = "  + this.state.toString());
         sb.append("\r\n");
         for (Morceau p : playlist)
             sb.append("\r\n\t" + p.toString());

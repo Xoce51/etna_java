@@ -12,11 +12,9 @@ package jukebox.model.state;
 public enum EJukeboxState
 {
     // State declaration
-    STATE_REPLAY("Replay", null),
-    STATE_NEXT("Next", STATE_REPLAY),
-    STATE_PREV("Prev", STATE_NEXT),
-    STATE_PAUSE("Pause", STATE_PREV),
-    STATE_PLAY("Play", STATE_PAUSE);
+    STATE_PREV("Prev", null),
+    STATE_PLAY("Pause", STATE_PREV),
+    STATE_PAUSE("Play",  STATE_PLAY);
     
     private EJukeboxState     nextStateStatus;
     private String            state;
