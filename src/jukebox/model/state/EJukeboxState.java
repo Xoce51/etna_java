@@ -25,5 +25,5 @@ public enum EJukeboxState
     }
     
     public String getState()                  { return(this.state); }
-    public EJukeboxState getNextStepState()      {return (this.nextStateStatus);}
+    public EJukeboxState getNextStepState()   { return (this.nextStateStatus); }
 }
