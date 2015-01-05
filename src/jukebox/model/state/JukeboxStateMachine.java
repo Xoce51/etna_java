@@ -16,6 +16,7 @@ public class JukeboxStateMachine
     public static void changeStep(IStateChangeable statedReference) throws ValidationException
     {
         statedReference.validate();
+        //System.out.println(statedReference.getState());
         statedReference.setState(statedReference.getState().getNextStepState());
     }
 }
