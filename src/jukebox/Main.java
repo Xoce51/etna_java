@@ -15,6 +15,8 @@ import jukebox.model.Groupe;
 import jukebox.model.Jukebox;
 import jukebox.model.Membre;
 import jukebox.model.Morceau;
+import jukebox.model.state.JukeboxStateMachine;
+import jukebox.model.validation.ValidationException;
 
 /**
  *
@@ -48,6 +50,12 @@ public class Main {
      
      Jukebox jk = new Jukebox(playlist);
      System.out.println(jk.toString());
+     
+    try { JukeboxStateMachine.changeStep(jk); }
+    catch (ValidationException e) 
+    {
+        System.out.println("Main: OrderStateMachine.changeStep() throws " + e.toString());
+    }
        
     }
     
