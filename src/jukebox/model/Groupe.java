@@ -15,6 +15,11 @@ public class Groupe {
     
     public Groupe(String name)
     {
+        createGroupe(name);
+    }
+    
+    public void createGroupe(String name)
+    {
         this.groupe = name;
     }
      public void setGroupe(String newGroupe) { this.groupe = newGroupe; }

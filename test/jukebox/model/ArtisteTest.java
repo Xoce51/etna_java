@@ -37,72 +37,84 @@ public class ArtisteTest {
     public void tearDown() {
     }
 
-    /**
+    /*
      * Test of setId method, of class Artiste.
      */
-    @Test
-    public void testSetId() {
-        System.out.println("setId");
-        int newId = 0;
-        Artiste instance = null;
-        instance.setId(newId);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of setRole method, of class Artiste.
-     */
-    @Test
-    public void testSetRole() {
-        System.out.println("setRole");
-        String newRole = "";
-        Artiste instance = null;
-        instance.setRole(newRole);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getId method, of class Artiste.
-     */
-    @Test
-    public void testGetId() {
-        System.out.println("getId");
-        Artiste instance = null;
-        int expResult = 0;
-        int result = instance.getId();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of getRole method, of class Artiste.
-     */
-    @Test
-    public void testGetRole() {
-        System.out.println("getRole");
-        Artiste instance = null;
-        String expResult = "";
-        String result = instance.getRole();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of toString method, of class Artiste.
-     */
-    @Test
-    public void testToString() {
-        System.out.println("toString");
-        Artiste instance = null;
-        String expResult = "";
-        String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
+      @Test
+      public void testCreateArtiste(){
+          System.out.println("createArtist");
+          int newId = 0;
+          int newAge = 0;
+          String newNom = "";
+          String newPrenom = "";
+          String newRole = "";
+          Artiste newArtiste = new Artiste(newId, newAge, newNom, newPrenom, newRole);
+          fail("The test case is a prototype.");
+      }
+//    @Test
+//    public void testSetId() {
+//        System.out.println("setId");
+//        int newId = 0;
+//        Artiste instance = null;
+//        instance.setId(newId);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of setRole method, of class Artiste.
+//     */
+//    @Test
+//    public void testSetRole() {
+//        System.out.println("setRole");
+//        String newRole = "";
+//        Artiste instance = null;
+//        instance.setRole(newRole);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of getId method, of class Artiste.
+//     */
+//    @Test
+//    public void testGetId() {
+//        System.out.println("getId");
+//        Artiste instance = null;
+//        int expResult = 0;
+//        int result = instance.getId();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of getRole method, of class Artiste.
+//     */
+//    @Test
+//    public void testGetRole() {
+//        System.out.println("getRole");
+//        Artiste instance = null;
+//        String expResult = "";
+//        String result = instance.getRole();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+//
+//    /**
+//     * Test of toString method, of class Artiste.
+//     */
+//    @Test
+//    public void testToString() {
+//        System.out.println("toString");
+//        Artiste instance = null;
+//        String expResult = "";
+//        String result = instance.toString();
+//        assertEquals(expResult, result);
+//        // TODO review the generated test code and remove the default call to fail.
+//        fail("The test case is a prototype.");
+//    }
+    
     
 }

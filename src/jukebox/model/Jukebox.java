@@ -23,6 +23,11 @@ public class Jukebox implements IStateChangeable
     
     public Jukebox(List<Morceau> morceaux)
     {
+       createJukebox(morceaux);
+    }
+        
+     public void createJukebox(List<Morceau> morceaux)
+     {
         this.state = EJukeboxState.STATE_PAUSE;
         this.playlist = morceaux;
     }

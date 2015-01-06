@@ -18,6 +18,11 @@ public class Album {
     
     public Album(Groupe groupe, String name, String style, int year)
     {
+        createAlbum(groupe, name, style, year);
+    }
+    
+    public void createAlbum(Groupe groupe, String name, String style, int year)
+    {
         this.groupe     = groupe;
         this.name       = name;
         this.style      = style;

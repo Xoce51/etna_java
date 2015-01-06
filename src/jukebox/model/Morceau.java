@@ -18,6 +18,11 @@ public class Morceau {
     
     public Morceau(int track, String title, String length, Album album)
     {
+        createMorceau(track, title, length, album);
+    }
+    
+    public void createMorceau(int track, String title, String length, Album album)
+    {
         this.track = track;
         this.title = title;
         this.length = length;
